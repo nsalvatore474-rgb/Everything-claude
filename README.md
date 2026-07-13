@@ -112,6 +112,7 @@ everything-claude-code/
 |   |-- security-review/            # Security checklist
 |   |-- eval-harness/               # Verification loop evaluation (Longform Guide)
 |   |-- verification-loop/          # Continuous verification (Longform Guide)
+|   |-- ui-ux-pro-max/              # UI/UX design intelligence: styles, colors, typography, UX guidelines
 |
 |-- commands/         # Slash commands for quick execution
 |   |-- tdd.md              # /tdd - Test-driven development

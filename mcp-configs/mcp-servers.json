@@ -80,6 +80,14 @@
       "command": "npx",
       "args": ["-y", "@modelcontextprotocol/server-filesystem", "/path/to/your/projects"],
       "description": "Filesystem operations (set your path)"
+    },
+    "21st": {
+      "type": "http",
+      "url": "https://21st.dev/api/mcp",
+      "headers": {
+        "x-api-key": "${API_KEY_21ST}"
+      },
+      "description": "21st.dev - search/generate UI components, themes, and templates (needs API_KEY_21ST, get one at https://21st.dev/mcp)"
     }
   },
   "_comments": {
