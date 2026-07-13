@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Urbanglow.ng | Original &amp; Authentic Skincare in Warri, Nigeria</title>
+<meta name="description" content="Urbanglow.ng sells 100% original and authentic skincare — serums, treatments, body wash &amp; sunscreen. Based in Warri, Delta State. Order on WhatsApp today.">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Urbanglow.ng | Original & Authentic Skincare">
+<meta property="og:description" content="Shop original and authentic skincare — serums, treatments, body wash & sunscreen. Based in Warri, Delta State, Nigeria. Order on WhatsApp.">
+<meta property="og:site_name" content="Urbanglow.ng">
+<meta property="og:locale" content="en_NG">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<!-- LocalBusiness structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Urbanglow.ng",
+  "description": "Original and authentic skincare products — serums, treatments, body wash and sunscreen.",
+  "image": "https://urbanglow.ng/images/storefront.jpg",
+  "telephone": "+2348064141612",
+  "priceRange": "₦₦",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "No 88 Jakpa Road",
+    "addressLocality": "Warri",
+    "addressRegion": "Delta State",
+    "addressCountry": "NG"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday"],
+      "opens": "12:00",
+      "closes": "17:00"
+    }
+  ],
+  "sameAs": []
+}
+</script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">Urban<span>glow</span><small>.ng</small></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="9" cy="21" r="1.4"></circle>
+          <circle cx="18" cy="21" r="1.4"></circle>
+          <path d="M2 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L21 7H6" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="hero-blob hero-blob-3"></div>
+  <div class="container hero-content">
+    <p class="eyebrow">Warri, Delta State &middot; Nigeria</p>
+    <h1>Welcome to<br>Urbanglow.ng</h1>
+    <p class="hero-sub">Original and authentic products.</p>
+    <div class="hero-buttons">
+      <a href="#shop" class="btn btn-primary">Shop Skincare</a>
+      <a href="#about" class="btn btn-outline">Why Urbanglow</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COLLECTIONS ================= -->
+<section class="collections" id="collections">
+  <div class="container">
+    <p class="eyebrow center">Featured Collections</p>
+    <h2 class="center">Shop by Category</h2>
+    <div class="collections-grid" id="collectionsGrid">
+      <!-- rendered by script.js from COLLECTIONS -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURED PRODUCTS ================= -->
+<section class="featured" id="featured">
+  <div class="container">
+    <p class="eyebrow center">Customer Favourites</p>
+    <h2 class="center">Featured Products</h2>
+    <div class="product-grid" id="featuredGrid">
+      <!-- rendered by script.js from PRODUCTS where featured === true -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= SHOP ================= -->
+<section class="shop" id="shop">
+  <div class="container">
+    <p class="eyebrow center">The Full Range</p>
+    <h2 class="center">Shop All Products</h2>
+
+    <div class="shop-controls">
+      <div class="filter-group" id="filterGroup">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <!-- collection filter buttons rendered by script.js -->
+      </div>
+      <div class="sort-group">
+        <label for="sortSelect">Sort by</label>
+        <select id="sortSelect">
+          <option value="default">Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name-asc">Name: A–Z</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="product-grid" id="shopGrid">
+      <!-- rendered by script.js -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-visual" aria-hidden="true">
+      <div class="about-shape"></div>
+    </div>
+    <div class="about-text">
+      <p class="eyebrow">About Urbanglow.ng</p>
+      <h2>Real Products. Real Glow. No Compromise.</h2>
+      <p>Urbanglow.ng was founded in Warri with one promise: every product we sell is 100% original and authentic, sourced directly from trusted brands and distributors — never counterfeits, never repackaged fakes.</p>
+      <p>We know the Nigerian skincare market is flooded with imitations. That's why we built a brand people can verify, trust, and reorder from with confidence. From serums to sunscreen, what you see is exactly what you get.</p>
+      <ul class="about-list">
+        <li>100% original &amp; authentic — always</li>
+        <li>Sealed products, never opened or diluted</li>
+        <li>Fast, reliable delivery across Nigeria</li>
+        <li>Friendly support on WhatsApp, before &amp; after you buy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="container">
+    <p class="eyebrow center">Get In Touch</p>
+    <h2 class="center">Visit or Message Us</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-block">
+          <h4>Address</h4>
+          <p>No 88 Jakpa Road<br>Warri, Delta State, Nigeria</p>
+        </div>
+        <div class="info-block">
+          <h4>Phone &amp; WhatsApp</h4>
+          <p><a href="tel:+2348064141612">+234 806 414 1612</a></p>
+        </div>
+        <div class="info-block">
+          <h4>Hours</h4>
+          <p>Mon &ndash; Sat: 9:00am &ndash; 7:00pm<br>Sun: 12:00pm &ndash; 5:00pm</p>
+        </div>
+        <a class="btn btn-primary" id="contactWhatsapp" href="https://wa.me/2348064141612?text=Hello%20Urbanglow%2C%20I%27d%20like%20to%20ask%20about%20a%20product." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+      <div class="map-placeholder" role="img" aria-label="Map showing Urbanglow.ng at No 88 Jakpa Road, Warri, Delta State">
+        <div class="map-pin">
+          <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M12 22s7-7.58 7-12.5A7 7 0 0 0 5 9.5C5 14.42 12 22 12 22z" stroke-linejoin="round"></path>
+            <circle cx="12" cy="9.5" r="2.5"></circle>
+          </svg>
+        </div>
+        <p>No 88 Jakpa Road, Warri<br>Delta State, Nigeria</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#home" class="logo">Urban<span>glow</span><small>.ng</small></a>
+      <p>Original and authentic products.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="TikTok">TT</a>
+      </div>
+      <p class="footer-phone">+234 806 414 1612</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Urbanglow.ng. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ================= CART DRAWER ================= -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="cart-header">
+    <h3>Your Cart</h3>
+    <button class="cart-close" id="cartClose" aria-label="Close cart">&times;</button>
+  </div>
+
+  <div class="cart-items" id="cartItems">
+    <!-- rendered by script.js -->
+  </div>
+
+  <div class="cart-footer">
+    <div class="cart-checkout-fields">
+      <label for="checkoutName">Full Name</label>
+      <input type="text" id="checkoutName" placeholder="Your name">
+      <label for="checkoutAddress">Delivery Address</label>
+      <textarea id="checkoutAddress" rows="2" placeholder="Street, city, state"></textarea>
+    </div>
+    <div class="cart-subtotal">
+      <span>Subtotal</span>
+      <strong id="cartSubtotal">₦0</strong>
+    </div>
+    <button class="btn btn-whatsapp" id="checkoutBtn">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.6.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.5-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5C10.2 9 9.7 7.8 9.5 7.3c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 2 3 4.8 4.2.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"></path><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2z"></path></svg>
+      Checkout on WhatsApp
+    </button>
+  </div>
+</aside>
+
+<!-- ================= TOAST ================= -->
+<div class="toast" id="toast"></div>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
