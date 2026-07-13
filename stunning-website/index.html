@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUME — Digital Design Studio</title>
+<meta name="description" content="LUME is a digital design studio crafting bold brands, websites and products for ambitious teams.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<div class="grain"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a href="#top" class="nav__logo">
+      <span class="nav__logo-mark">✦</span> LUME
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#work" data-cursor="hover">Work</a>
+      <a href="#services" data-cursor="hover">Services</a>
+      <a href="#process" data-cursor="hover">Process</a>
+      <a href="#about" data-cursor="hover">About</a>
+      <a href="#contact" data-cursor="hover">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn--sm btn--primary" data-cursor="hover">Start a project</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__mesh" aria-hidden="true">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+      <div class="hero__grid"></div>
+    </div>
+
+    <div class="container hero__inner">
+      <p class="eyebrow reveal">
+        <span class="eyebrow__dot"></span> Digital Design Studio &mdash; Est. 2018
+      </p>
+      <h1 class="hero__title">
+        <span class="reveal reveal--delay-1">We craft digital</span>
+        <span class="reveal reveal--delay-2">experiences that</span>
+        <span class="reveal reveal--delay-3"><em>captivate.</em></span>
+      </h1>
+      <p class="hero__subtitle reveal reveal--delay-4">
+        LUME partners with ambitious brands to design and build websites,
+        products and identities that move people &mdash; and move the needle.
+      </p>
+      <div class="hero__actions reveal reveal--delay-5">
+        <a href="#work" class="btn btn--primary btn--lg" data-cursor="hover">See our work</a>
+        <a href="#contact" class="btn btn--ghost btn--lg" data-cursor="hover">
+          <span class="btn__play">&#9654;</span> Book a call
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="marquee" aria-label="Trusted by">
+    <div class="marquee__label">Trusted by forward-thinking teams</div>
+    <div class="marquee__track">
+      <div class="marquee__group">
+        <span>NORTHWIND</span><span>&#9670;</span>
+        <span>VERITAS</span><span>&#9670;</span>
+        <span>ORBITAL</span><span>&#9670;</span>
+        <span>HALCYON</span><span>&#9670;</span>
+        <span>FERNWEH</span><span>&#9670;</span>
+        <span>MONARCH</span><span>&#9670;</span>
+        <span>ZENITH&nbsp;LABS</span><span>&#9670;</span>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
+        <span>NORTHWIND</span><span>&#9670;</span>
+        <span>VERITAS</span><span>&#9670;</span>
+        <span>ORBITAL</span><span>&#9670;</span>
+        <span>HALCYON</span><span>&#9670;</span>
+        <span>FERNWEH</span><span>&#9670;</span>
+        <span>MONARCH</span><span>&#9670;</span>
+        <span>ZENITH&nbsp;LABS</span><span>&#9670;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="container">
+      <div class="section-head">
+        <p class="tag reveal-up">Selected Work</p>
+        <h2 class="reveal-up">Projects we're proud of</h2>
+      </div>
+
+      <div class="work__grid">
+
+        <article class="work-card work-card--lg reveal-up" data-cursor="view">
+          <div class="work-card__media work-card__media--a">
+            <svg viewBox="0 0 400 300" class="work-card__art"><circle cx="300" cy="80" r="140" /><circle cx="90" cy="230" r="90" /></svg>
+          </div>
+          <div class="work-card__body">
+            <div>
+              <span class="work-card__cat">Brand &amp; Web</span>
+              <h3>Orbital Finance</h3>
+            </div>
+            <span class="work-card__arrow">&#8599;</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal-up" data-cursor="view">
+          <div class="work-card__media work-card__media--b">
+            <svg viewBox="0 0 400 300" class="work-card__art"><rect x="60" y="40" width="280" height="220" rx="24"/></svg>
+          </div>
+          <div class="work-card__body">
+            <div>
+              <span class="work-card__cat">Product Design</span>
+              <h3>Halcyon Health</h3>
+            </div>
+            <span class="work-card__arrow">&#8599;</span>
+          </div>
+        </article>
+
+        <article class="work-card reveal-up" data-cursor="view">
+          <div class="work-card__media work-card__media--c">
+            <svg viewBox="0 0 400 300" class="work-card__art"><polygon points="200,30 370,270 30,270"/></svg>
+          </div>
+          <div class="work-card__body">
+            <div>
+              <span class="work-card__cat">Identity</span>
+              <h3>Fernweh Travel</h3>
+            </div>
+            <span class="work-card__arrow">&#8599;</span>
+          </div>
+        </article>
+
+        <article class="work-card work-card--lg reveal-up" data-cursor="view">
+          <div class="work-card__media work-card__media--d">
+            <svg viewBox="0 0 400 300" class="work-card__art"><ellipse cx="200" cy="150" rx="180" ry="90"/><ellipse cx="260" cy="110" rx="90" ry="90"/></svg>
+          </div>
+          <div class="work-card__body">
+            <div>
+              <span class="work-card__cat">E-commerce</span>
+              <h3>Monarch Goods</h3>
+            </div>
+            <span class="work-card__arrow">&#8599;</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="work__cta reveal-up">
+        <a href="#contact" class="btn btn--outline" data-cursor="hover">View all projects &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stat reveal-up">
+        <span class="stat__num" data-count="120">0</span><span class="stat__plus">+</span>
+        <p>Projects shipped</p>
+      </div>
+      <div class="stat reveal-up">
+        <span class="stat__num" data-count="45">0</span><span class="stat__plus">+</span>
+        <p>Happy clients</p>
+      </div>
+      <div class="stat reveal-up">
+        <span class="stat__num" data-count="8">0</span>
+        <p>Years in craft</p>
+      </div>
+      <div class="stat reveal-up">
+        <span class="stat__num" data-count="99">0</span><span class="stat__plus">%</span>
+        <p>Client satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="tag reveal-up">What We Do</p>
+        <h2 class="reveal-up">Services built to move you forward</h2>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card reveal-up">
+          <span class="service-card__num">01</span>
+          <h3>Brand Identity</h3>
+          <p>Strategy-led visual identities &mdash; logo systems, color, type and voice that make brands unmistakable.</p>
+        </div>
+        <div class="service-card reveal-up">
+          <span class="service-card__num">02</span>
+          <h3>Web Design &amp; Dev</h3>
+          <p>High-performance, beautifully crafted websites engineered for conversion and built to scale.</p>
+        </div>
+        <div class="service-card reveal-up">
+          <span class="service-card__num">03</span>
+          <h3>Product Design</h3>
+          <p>End-to-end UX/UI for web and mobile products, from first wireframe to polished design system.</p>
+        </div>
+        <div class="service-card reveal-up">
+          <span class="service-card__num">04</span>
+          <h3>Motion &amp; Interaction</h3>
+          <p>Micro-interactions and motion design that add delight without ever getting in the user's way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="section-head section-head--light">
+        <p class="tag reveal-up">How We Work</p>
+        <h2 class="reveal-up">A process built on clarity</h2>
+      </div>
+
+      <div class="process__list">
+        <div class="process__item reveal-up">
+          <span class="process__index">01</span>
+          <div>
+            <h3>Discover</h3>
+            <p>We dig into your goals, audience and competitive landscape to find the real problem worth solving.</p>
+          </div>
+        </div>
+        <div class="process__item reveal-up">
+          <span class="process__index">02</span>
+          <div>
+            <h3>Design</h3>
+            <p>Concepts move fast from sketch to high-fidelity, refined through tight feedback loops with your team.</p>
+          </div>
+        </div>
+        <div class="process__item reveal-up">
+          <span class="process__index">03</span>
+          <div>
+            <h3>Build</h3>
+            <p>Pixel-perfect, performant engineering &mdash; every interaction tested across devices before it ships.</p>
+          </div>
+        </div>
+        <div class="process__item reveal-up">
+          <span class="process__index">04</span>
+          <div>
+            <h3>Launch &amp; Grow</h3>
+            <p>We stay on for measurement and iteration, so the product keeps improving long after launch day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="about">
+    <div class="container">
+      <div class="section-head">
+        <p class="tag reveal-up">Kind Words</p>
+        <h2 class="reveal-up">Don't just take our word for it</h2>
+      </div>
+
+      <div class="testimonial-slider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <blockquote class="testimonial">
+            <p>&ldquo;LUME completely transformed how our customers see us. The new site doubled our conversion rate in six weeks.&rdquo;</p>
+            <footer><strong>Maya Ortiz</strong><span>CEO, Orbital Finance</span></footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>&ldquo;The most thoughtful, detail-obsessed design team we've ever worked with. Every pixel earns its place.&rdquo;</p>
+            <footer><strong>Daniel Reyes</strong><span>Founder, Halcyon Health</span></footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>&ldquo;They didn't just design a website &mdash; they gave us a whole new way to talk about our brand.&rdquo;</p>
+            <footer><strong>Priya Natarajan</strong><span>CMO, Monarch Goods</span></footer>
+          </blockquote>
+        </div>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner" id="contact">
+    <div class="container cta-banner__inner">
+      <h2 class="reveal-up">Let's build something <em>stunning</em> together.</h2>
+      <p class="reveal-up">Tell us about your project and we'll get back to you within one business day.</p>
+      <form class="cta-form reveal-up" id="ctaForm">
+        <input type="email" placeholder="you@company.com" required aria-label="Email address">
+        <button type="submit" class="btn btn--primary btn--lg" data-cursor="hover">Get in touch</button>
+      </form>
+      <p class="cta-form__note" id="ctaNote">No spam. Just a real reply from a real human.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#top" class="nav__logo"><span class="nav__logo-mark">&#10022;</span> LUME</a>
+      <p>A digital design studio crafting brands, products and websites for teams who want to stand out.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Twitter" data-cursor="hover">X</a>
+        <a href="#" aria-label="Instagram" data-cursor="hover">IG</a>
+        <a href="#" aria-label="LinkedIn" data-cursor="hover">LI</a>
+        <a href="#" aria-label="Dribbble" data-cursor="hover">DR</a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h4>Studio</h4>
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="mailto:hello@lume.studio">hello@lume.studio</a>
+      <a href="tel:+15551234567">+1 (555) 123-4567</a>
+      <span>San Francisco, CA</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>&copy; <span id="year"></span> LUME Studio. All rights reserved.</span>
+    <span>Designed &amp; built with care.</span>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
