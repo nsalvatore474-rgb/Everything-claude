@@ -1,0 +1,10 @@
+FREELANCE OUTREACH TRACKER
+==========================
+
+Columns: Platform | Client | Date Contacted | Follow-Up Date | Status
+
+Platform        | Client            | Date Contacted | Follow-Up Date | Status
+----------------|--------------------|----------------|----------------|------------------
+Upwork          | Acme Design Co.    | 2026-07-01     | 2026-07-08     | Awaiting reply
+LinkedIn        | Jane Doe (Startup) | 2026-07-05     | 2026-07-12     | Replied - in talks
+Referral        | Bright Marketing   | 2026-07-10     | 2026-07-17     | Not yet contacted
